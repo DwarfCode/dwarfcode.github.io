@@ -5,16 +5,20 @@
 @import "base/base";
 
 html {
-  background: $slate;
+  background: #0a0f15;
   color: $bleach;
 }
 
 .container {
   padding: 2rem;
-  max-width: 500px;
 }
 
-h1 {
+section {
+  margin-bottom: 4rem;
+}
+
+h1,
+h2 {
   @include margin(null null 1rem null);
   color: $lava;
   display: inline-block;
@@ -26,12 +30,9 @@ h1 {
 }
 
 a,
-p {
+p,
+ul {
   font-size: 2rem;
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
@@ -39,4 +40,17 @@ img {
   max-height: 6rem;
   max-width: 6rem;
   vertical-align: sub;
+}
+
+ul {
+  list-style-type: square;
+  margin-bottom: 2rem;
+
+  li {
+    margin-left: 2rem;
+  }
+}
+
+.logo {
+  margin-bottom: 0;
 }
