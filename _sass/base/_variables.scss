@@ -1,7 +1,7 @@
 // Typography
-$skranji: 'Skranji';
-$oswald: 'Oswald';
-$base-font-family:  $oswald, $font-stack-system;
+$skranji: "Skranji";
+$lato: "Lato";
+$base-font-family: $lato, $font-stack-system;
 $heading-font-family: $skranji, $base-font-family;
 
 // Line height
@@ -26,7 +26,7 @@ $slate: #10151e;
 $snow: #d8dee9;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $bleach;
 $action-color: $lava;
 
 // Border

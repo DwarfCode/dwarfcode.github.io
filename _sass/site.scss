@@ -1,41 +1,42 @@
-@import 'normalize';
-@import url('https://fonts.googleapis.com/css?family=Oswald|Skranji');
-@import 'bourbon/bourbon';
-@import 'neat/neat';
-@import 'base/base';
+@import "normalize";
+@import url("https://fonts.googleapis.com/css?family=Lato|Skranji");
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
 
 html {
   background: $slate;
-  color: $snow;
+  color: $bleach;
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
+.container {
+  margin: 4rem auto;
+  max-width: 400px;
+}
 
-  h1 {
-    @include margin(null null 1rem null);
-    color: $lava;
-    display: inline-block;
-    font-size: 3rem;
+h1 {
+  @include margin(null null 1rem null);
+  color: $lava;
+  display: inline-block;
+  font-size: 3rem;
 
-    span {
-      color: $bleach;
-    }
+  span {
+    color: $bleach;
   }
+}
 
-  p {
-    color: transparentize($snow, .6);
-    font-size: 2rem;
-  }
+a,
+p {
+  font-size: 2rem;
+}
 
-  img {
-    @include margin(0 auto 1rem auto);
-    max-height: 6rem;
-    max-width: 6rem;
-    vertical-align: sub;
-  }
+a {
+  text-decoration: none;
+}
+
+img {
+  @include margin(0 auto 1rem auto);
+  max-height: 6rem;
+  max-width: 6rem;
+  vertical-align: sub;
 }
